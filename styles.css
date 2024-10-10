@@ -165,6 +165,22 @@ header {
 .sidebar.active {
     transform: translateX(0);
 }
+
+
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ccc; /* Change color on hover for better user experience */
+}
+
   
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
