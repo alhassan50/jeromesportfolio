@@ -59,8 +59,13 @@ button, .btn {
 }
 
 .sec-btn {
-    border: 2px solid var(--text-color);
     color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.ghost-btn {
+    color: var(--text-color);
+    border: 0px;
 }
 
 a.sec-btn:hover {
@@ -183,8 +188,8 @@ header {
 
   
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .nav-links {
+@media (max-width: 1000px) {
+    .nav-links, .download-cv {
         display: none;
     }
   
@@ -543,7 +548,8 @@ header {
 }
 
 .cont {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
 }
 
@@ -558,7 +564,6 @@ header {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
 }
